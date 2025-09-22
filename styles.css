@@ -50,9 +50,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*html {
+html {
   scroll-behavior: smooth;
-}*/
+}
 
 body,
 button,
@@ -203,6 +203,18 @@ img {
   display: none;
 }
 
+/*=================Activar link=================*/
+.active-link {
+  color: var(--first-color);
+}
+
+/*=================Cambiar el encabezado de fondo=================*/
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 4px 4px hsla(var(--first-hue), 0%, 4%, 0.2);
+}
+
+
 /*=================PERFIL=================*/
 .home-container {
   grid-template-columns: 1fr repeat(2, max-content);
@@ -337,51 +349,239 @@ img {
 }
 
 .work-link:hover .work-icon {
-  transform: translateX(01.25rem);
+  transform: translateX(0.25rem);
 }
 
-
-/*=================PRUEBA=================*/
-.hidden {
-    display: none;
+/*=================FOOTER=================*/
+.footer {
+  background-color: var(--container-color);
+  padding-block: 2rem;
 }
 
-#volver-semanas {
-  display: inline-block;
-  background-color: #ff4d4d; /* Rojo */
-  color: #fff;
-  padding: 10px 20px;
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.footer-link {
+  color: var(--title-color);
+  font-size: var(--large-font-size);
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--first-color);
+}
+
+.footer-copyright {
+  font-weight: var(--font-semi-bold);
+}
+
+.footer-copyright span {
+  color: var(--first-color);
+}
+
+/*=================HTML - SEMANAS=================*/ 
+.home-titulo {
+  font-size: var(--big-font-size);
+  line-height: 1;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.home-unidad {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+/*=================probando=================*/ 
+
+/* === Acordeón === */
+.accordion {
+  background: #1a1a1a;
+  margin: 10px 0;
+  border-radius: 20px;
+  overflow: hidden;
+  border-left: 4px solid #ff0202;
+}
+
+.accordion-header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #00bfff;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  background: #222;
+}
+
+.work-link i {
+  transition: transform 0.3s;
+  font-size: 20px;
+}
+
+.accordion-header.active i {
+  transform: rotate(90deg);
+}
+
+/* Animación suave */
+.accordion-content {
+  max-height: 500px; /* ajusta la altura visible */
+  overflow-y: auto;  /* activa el scroll vertical */
+  padding: 15px;
+  background: #111;
+  transition: max-height 0.4s ease;
+}
+
+.accordion-content.open {
+  max-height: 400px;  /* aquí defines el alto visible */
+  overflow-y: auto;   /* activa scroll vertical */
+  padding: 15px;
+  background: #111;
+}
+
+.accordion-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.accordion-content::-webkit-scrollbar-thumb {
+  background: #00bfff;
+  border-radius: 4px;
+}
+
+.accordion-content::-webkit-scrollbar-track {
+  background: #222;
+}
+
+/* === Tarjetas de trabajos === */
+.card-trabajo {
+  background: #1e1e1e;
   border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.card-trabajo img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* === Botones exclusivos de trabajos === */
+.card-botones {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card-botones .trabajo-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
-  transition: background 0.3s ease;
-  margin-left: auto;   /* empuja hacia la derecha */
-  margin-right: auto;  /* centra (si es display:block o flex) */
-  display: block;      /* necesario para centrar con margin:auto */
-  width: fit-content;  /* se ajusta al texto */
-
+  font-size: 14px;
+  transition: background 0.3s;
 }
 
-#volver-semanas:hover {
-  background-color: #cc0000; /* Rojo más oscuro */
+/* Botón Ver */
+.card-botones .btn-ver {
+  background: #3498db;
+  color: white;
+}
+.card-botones .btn-ver:hover {
+  background: #217dbb;
 }
 
-#volver-cursos {
-  display: inline-block;
-  background-color: #ff4d4d; /* Rojo */
-  color: #fff;
-  padding: 10px 20px;
+/* Botón Descargar */
+.card-botones .btn-descargar {
+  background: #2ecc71;
+  color: white;
+}
+.card-botones .btn-descargar:hover {
+  background: #27ae60;
+}
+
+/* Estado cerrado */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 15px;
+}
+
+/* Estado abierto */
+.accordion-content.open {
+  max-height: 500px; /* ajusta según el contenido */
+  padding: 15px;
+}
+
+/* Rotación del icono */
+.accordion-header.active .work-icon {
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+
+.accordion-header .work-icon {
+  transition: transform 0.3s;
+}
+
+.trabajos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 🔹 Fuerza 4 por fila */
+  gap: 20px; /* más espacio entre las tarjetas */
+  margin-top: 15px;
+  margin-bottom: 25px; /* 🔹 espacio extra abajo */
+}
+
+.card-trabajo {
+  background: #1e1e1e;
   border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s ease;
-  margin-left: auto;   /* empuja hacia la derecha */
-  margin-right: auto;  /* centra (si es display:block o flex) */
-  display: block;      /* necesario para centrar con margin:auto */
-  width: fit-content;  /* se ajusta al texto */
-
+  padding: 60px 20px; /* un poco más grande */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  text-align: center;
 }
 
-#volver-cursos:hover {
-  background-color: #cc0000; /* Rojo más oscuro */
+.card-trabajo img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px; /* más espacio bajo la imagen */
+}
+
+.card-botones {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.btn-regresar-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn-regresar {
+  padding: 10px 20px;
+  background: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-regresar:hover {
+  background: #009acd;
 }
