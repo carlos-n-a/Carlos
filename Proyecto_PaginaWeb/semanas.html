@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===========LINKEAR EL REMIXICON=========== -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- ===========linkear el css=========== -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <!-- ===========ENCABEZADO=========== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <img src="img/Logo_Upla.png" alt="Perfil" class="user-icon">
+            <a href="#" class="nav-logo">Carlos Nolasco</a>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="admin-link">Administrador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="logout-item" class="nav-link" style="display: none;">Cerrar sesión</a>
+                    </li>
+                </ul>
+
+                <i class="ri-close-line nav-close"></i>
+            </div>
+
+            <div class="nav-btns">
+                <!--<i class="ri-sun-line change-theme"></i>-->
+
+                <div class="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===========SEMANAS=========== -->
+    <main class="main">
+
+        <!-- ===========semanas=========== -->
+        <section class="home section" id="home">
+            <div class="home-container container grid">
+                <div class="home-data">
+                    <h1 class="home-titulo">SEMANAS</h1>
+
+                    <!-- ===========UNIDAD I=========== -->
+                    <h2 class="home-unidad">Unidad I</h2>
+                        <!-- ===========SEMANA1=========== -->
+                        <div class="accordion" data-semana="Semana 1">
+                            <div class="accordion-header">
+                                <span>Semana 1</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+                        <!-- ===========SEMANA2=========== -->
+                        <div class="accordion" data-semana="Semana 2">
+                            <div class="accordion-header">
+                                <span>Semana 2</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+                        <!-- ===========SEMANA3=========== -->
+                        <div class="accordion" data-semana="Semana 3">
+                            <div class="accordion-header">
+                                <span>Semana 3</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+
+                        <!-- ===========SEMANA 4=========== -->
+                        <div class="accordion" data-semana="Semana 4">
+                            <div class="accordion-header">
+                                <span>Semana 4</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+
+                    <!-- ===========UNIDAD II=========== -->
+                    <h2 class="home-unidad">Unidad II</h2>
+
+                        <!-- ===========SEMANA5=========== -->
+                        <div class="accordion" data-semana="Semana 5">
+                            <div class="accordion-header">
+                                <span>Semana 5</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+
+                        <!-- ===========SEMANA6=========== -->
+                        <div class="accordion" data-semana="Semana 6">
+                            <div class="accordion-header">
+                                <span>Semana 6</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+                        <!-- ===========SEMANA 7=========== -->
+                        <div class="accordion" data-semana="Semana 7">
+                            <div class="accordion-header">
+                                <span>Semana 7</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+                        <!-- ===========SEMANA 8=========== -->
+                        <div class="accordion" data-semana="Semana 8">
+                            <div class="accordion-header">
+                                <span>Semana 8</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+
+                    <!-- ===========UNIDAD III=========== -->
+                    <h2 class="home-unidad">Unidad III</h2>
+
+                        <!-- ===========SEMANA9=========== -->
+                        <div class="accordion" data-semana="Semana 9">
+                            <div class="accordion-header">
+                                <span>Semana 9</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+                        <!-- ===========SEMANA10=========== -->
+                        <div class="accordion" data-semana="Semana 10">
+                            <div class="accordion-header">
+                                <span>Semana 10</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+                        <!-- ===========SEMANA 11=========== -->
+                        <div class="accordion" data-semana="Semana 11">
+                            <div class="accordion-header">
+                                <span>Semana 11</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+                        <!-- ===========SEMANA 12=========== -->
+                        <div class="accordion" data-semana="Semana 12">
+                            <div class="accordion-header">
+                                <span>Semana 12</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+                    <!-- ===========UNIDAD IV =========== -->
+                    <h2 class="home-unidad">Unidad IV</h2>
+
+                        <!-- ===========SEMANA 13=========== -->
+                        <div class="accordion" data-semana="Semana 13">
+                            <div class="accordion-header">
+                                <span>Semana 13</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+                        <!-- ===========SEMANA 14=========== -->
+                        <div class="accordion" data-semana="Semana 14">
+                            <div class="accordion-header">
+                                <span>Semana 14</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+
+                        <!-- ===========SEMANA 15=========== -->
+                        <div class="accordion" data-semana="Semana 15">
+                            <div class="accordion-header">
+                                <span>Semana 15</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+                        <!-- ===========SEMANA 16=========== -->
+                        <div class="accordion" data-semana="Semana 16">
+                            <div class="accordion-header">
+                                <span>Semana 16</span>
+                                <div class="acciones-admin" id="acciones-admin" style="display:none;">
+                                    <button id="btn-eliminar" class="btn-admin eliminar">ELIMINAR</button>
+                                    <button id="btn-agregar" class="btn-admin agregar">AGREGAR</button>
+                                </div>
+                                <div class="work-link toggle-btn">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                            </div>
+                            <div class="accordion-content">     
+                                <!-- Aquí se mostrarán dinámicamente los archivos desde Supabase -->
+                                <div class="trabajos-grid"></div> 
+                            </div> <!--Cierra .accordion-content -->
+                        </div> <!--Cierra .accordion -->
+
+                </div>
+            </div>
+
+            
+        </section>
+
+        <!-- ===========ADMINISTRADOR=========== -->
+        <div id="login-modal" class="modal-admi">
+        <div class="container-admi">
+            <span class="close">&times;</span>
+            <h1>Iniciar Sesión</h1>
+            <form>
+            <div class="input-box">
+                <input type="text" placeholder="Nombre de usuario" required>
+                <i class="ri-user-fill"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Contraseña" required>
+                <i class="ri-lock-fill"></i>
+            </div>
+
+            <button class="btn-admi">Ingresar</button>
+
+            <div class="remember-password">
+                <label><input type="checkbox">Recordarme</label>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <!--<div class="register-link">
+                <a href="#">Registrarme</a>-->
+            </div>
+            </form>
+        </div>
+        </div>
+
+
+    </main>
+
+   <div class="btn-regresar-container">
+        <a href="index.html" class="btn-regresar">
+        <i class="ri-arrow-go-back-fill"></i> Regresar
+        </a>
+    </div>
+    <br>
+    <br>
+
+    <!-- ===========PIE DE PAGINA=========== -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-social">
+                <!-- ===========EN HREF VA EL LINK=========== -->
+                <a 
+                    href="" 
+                    target="_blank" 
+                    class="footer-link"
+                >
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+
+                <a 
+                    href="" 
+                    target="_blank" 
+                    class="footer-link"
+                >
+                    <i class="ri-instagram-line"></i>
+                </a>
+
+                <a 
+                    href="" 
+                    target="_blank" 
+                    class="footer-link"
+                >
+                    <i class="ri-github-fill"></i>
+                </a>
+            </div>
+
+            <p class="footer-copyright">
+                © 2025 <span>Carlos Nolasco</span>.
+            </p>
+
+            <p class="footer-copyright">Desarrolado por <span>Carlos</span></p>
+        </div>
+
+    <!-- ===========GSAP=========== -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <!-- ===========MEZCLA=========== -->
+    <Script src="Externos/mixitup.min.js"></Script>
+    <!-- ===========linkear el main.js=========== -->
+    <script src="semanas.js"></script>
+    <script src="main.js"></script>
+    <!-- ===========linkear el supabase========== -->
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    
+
+</body>
+
+</html>
